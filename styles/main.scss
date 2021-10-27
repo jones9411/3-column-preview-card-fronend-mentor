@@ -1,0 +1,47 @@
+@use "variables";
+@use "globals";
+
+body {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-sedan {
+  background-color: variables.$brightorange;
+
+  button {
+    color: variables.$brightorange;
+  }
+  button:hover {
+    background-color: variables.$brightorange;
+    color: variables.$transparentwhite;
+    border: 2px solid variables.$transparentwhite;
+  }
+}
+
+.card-suv {
+  background-color: variables.$darkcyan;
+
+  button {
+    color: variables.$darkcyan;
+  }
+  button:hover {
+    background-color: variables.$darkcyan;
+    color: variables.$transparentwhite;
+    border: 2px solid variables.$transparentwhite;
+  }
+}
+
+.card-luxury {
+  background-color: variables.$verydarkcyan;
+
+  button {
+    color: variables.$verydarkcyan;
+  }
+  button:hover {
+    background-color: variables.$verydarkcyan;
+    color: variables.$transparentwhite;
+    border: 2px solid variables.$transparentwhite;
+  }
+}

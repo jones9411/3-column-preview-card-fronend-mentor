@@ -1,0 +1,74 @@
+@use "variables";
+
+.container {
+  width: 920px;
+  height: 500px;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "card-sedan card-suv card-luxury";
+}
+
+.card {
+  padding: 47px;
+  border-radius: 7px;
+  position: relative;
+
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+    color: variables.$verylightgray;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: "Lexand Deca";
+    line-height: 1.5625rem;
+    color: variables.$transparentwhite;
+  }
+
+  button {
+    position: absolute;
+    bottom: 100px;
+    width: 9.125rem;
+    height: 3rem;
+    border-radius: 1.5625rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  &-sedan {
+    grid-area: card-sedan;
+  }
+  &-suv {
+    grid-area: card-suv;
+  }
+  &-luxury {
+    grid-area: card-luxury;
+  }
+}
+
+@media all and (max-width: 675px) {
+  .container {
+    max-width: 20.4375rem;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "card-sedan"
+      "card-suv"
+      "card-luxury";
+  }
+
+  .card {
+    height: 442px;
+
+    p {
+      font-size: 0.9375rem;
+    }
+  }
+}
