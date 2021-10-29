@@ -21,6 +21,7 @@
     color: variables.$verylightgray;
     font-size: 2.5rem;
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   p {
@@ -38,6 +39,7 @@
     border: none;
     cursor: pointer;
     font-weight: 700;
+    transition: all 0.2s;
   }
 
   &-sedan {
@@ -72,3 +74,4 @@
     }
   }
 }
+
